@@ -30,14 +30,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- font-awesome icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
+
+    <!-- Css animations  -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
     <!-- js -->
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!-- start-smoth-scrolling -->
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/front.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
@@ -328,45 +342,116 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- /.carousel -->
     <!--brands-->
-    <div class="brands">
-        <div class="container">
-            <h3>Our Clients</h3>
-            <div class="brands-agile">
-                <div class="col-md-2 w3layouts-brand">
-                    <div class="brands-w3l">
-                        <p><a href="#">Parle</a></p>
-                    </div>
-                </div>
-                <div class="col-md-2 w3layouts-brand">
-                    <div class="brands-w3l">
-                        <p><a href="#">Madhur</a></p>
-                    </div>
-                </div>
-                <div class="col-md-2 w3layouts-brand">
-                    <div class="brands-w3l">
-                        <p><a href="#">Ruchi</a></p>
-                    </div>
-                </div>
+<section class="bar background-pentagon no-mb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading text-center">
+                            <h2>Testimonials</h2>
+                        </div>
 
-                <div class="col-md-2 w3layouts-brand">
-                    <div class="brands-w3l">
-                        <p><a href="#">MTR</a></p>
+                        <p class="lead">We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.</p>
+
+
+                        <!-- *** TESTIMONIALS CAROUSEL ***
+ _________________________________________________________ -->
+
+                        <ul class="owl-carousel testimonials same-height-row owl-theme">
+                            <li class="item">
+                                <div class="testimonial same-height-always">
+                                    <div class="text">
+                                        <p>We used to go to multiple shops and vendors to purchase the products we need.It
+                                        used to be a daunting task for us to procure everything at a reasonable price. Then we are lucky to found B2BEazy.com. One stop to purchase all we need at great prices. Now all we do is to make a call to the purchase manager and its done. Amazing Guys. Keep it up. </p>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="icon"><i class="fa fa-quote-left"></i>
+                                        </div>
+                                        <div class="name-picture">
+                                            <img class="" alt="" src="images/person-1.jpg">
+                                            <h5>Neha</h5>
+                                            <p>Owner, Chaiywaala Outlets</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="testimonial same-height-always">
+                                    <div class="text">
+                                        <p>I was setting up office and need several office supplies. Being new to bangalore it was even more tougher for me. Then my partner told me about these guys. I contacted them and viola!!! All office supplies and needs with in a week. Awesome..</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="icon"><i class="fa fa-quote-left"></i>
+                                        </div>
+                                        <div class="name-picture">
+                                            <img class="" alt="" src="images/person-2.jpg">
+                                            <h5>Jagapathi</h5>
+                                            <p>CEO, Subhaprada Builders</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="testimonial same-height-always">
+                                    <div class="text">
+                                        <p>Being a techie, i thought it was easy to find anything online. I realised only after i ventured into buisiness</p>
+
+                                        <p>It was pretty hard for me start my barbecue business with out proper supply of raw materials. Then we had met this guys through a common friend and guess what. i no longer worry about vendors or supplies. Their purchase manager will take care of everything that you need. All i do is to concentrate on my business. Thank you so much guys.
+                                        </p>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="icon"><i class="fa fa-quote-left"></i>
+                                        </div>
+                                        <div class="name-picture">
+                                            <img class="" alt="" src="images/person-3.png">
+                                            <h5>Usha Vijay</h5>
+                                            <p>Partner, BBQ On Wheels</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="testimonial same-height-always">
+                                    <div class="text">
+                                        <p>Great Prices. Amazing service. Thumps Up...</p>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <div class="icon"><i class="fa fa-quote-left"></i>
+                                        </div>
+                                        <div class="name-picture">
+                                            <img class="" alt="" src="images/person-4.jpg">
+                                            <h5>Shafi</h5>
+                                            <p>Cafe Buzzinga</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="testimonial same-height-always">
+                                    <div class="text">
+                                        <p>Brilliant job guys.</p>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <div class="icon"><i class="fa fa-quote-left"></i>
+                                        </div>
+                                        <div class="name-picture">
+                                            <img class="" alt="" src="images/person-4.jpg">
+                                            <h5>Srinivas</h5>
+                                            <p>CEO, TransTech</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- /.owl-carousel -->
+
+                        <!-- *** TESTIMONIALS CAROUSEL END *** -->
                     </div>
+
                 </div>
-                <div class="col-md-2 w3layouts-brand">
-                    <div class="brands-w3l">
-                        <p><a href="#">Pepsi</a></p>
-                    </div>
-                </div>
-                <div class="col-md-2 w3layouts-brand">
-                    <div class="brands-w3l">
-                        <p><a href="#">Lays</a></p>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
             </div>
-        </div>
-    </div>
+        </section>
     <!--//brands-->
     <!-- //footer -->
     <div class="footer">
