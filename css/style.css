@@ -2388,13 +2388,25 @@ h3.agileits-icons-title {
 }
 .bar {
   position: relative;
-  background: #38a7bb;
+  background: #4c376f;
   padding: 60px 0;
+}
+.bar.background-gray {
+  background: #eeeeee;
 }
 .bar.background-pentagon {
   background: url('../images/texture-bw.png') center center repeat;
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
+}
+.bar.color-white h1,
+.bar.color-white h2,
+.bar.color-white h3,
+.bar.color-white h4,
+.bar.color-white h5,
+.bar.color-white h6,
+.bar.color-white p {
+  color: #fff;
 }
 .no-mb {
   margin-bottom: 0 !important;
@@ -3481,4 +3493,18 @@ td.invert-image a img {
 .w3agile_description p {
     font-size: 13px;
 }
+}
+
+.banner-text-title {
+    font-family: 'open_sansregular';
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 270px;
+    padding-bottom: 20px;
+}
+
+.enabling-text {
+    text-align: center;
 }
