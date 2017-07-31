@@ -198,28 +198,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3_agileits_contact_grid_right">
 				<h2 class="w3_agile_header">Quote Request <span> Form</span></h2>
 
-				<form action="#" method="post">
+				<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdXmOfXQK4fwKCM48h7AuKlAsyUYRfA3M5pDGd_48_lHEKd1w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 					<span class="input input--ichiro">
-						<input class="input__field input__field--ichiro" type="text" id="input-25" name="Name" placeholder=" " required="" />
-						<label class="input__label input__label--ichiro" for="input-25">
+						<input class="input__field input__field--ichiro" type="text" id="entry.1044409996" name="entry.1044409996" placeholder=" " required="" />
+						<label class="input__label input__label--ichiro" for="entry.1044409996">
 							<span class="input__label-content input__label-content--ichiro">Your Name</span>
 						</label>
 					</span>
 					<span class="input input--ichiro">
-						<input class="input__field input__field--ichiro" type="email" id="input-26" name="Email" placeholder=" " required="" />
-						<label class="input__label input__label--ichiro" for="input-26">
+						<input class="input__field input__field--ichiro" type="text" id="entry.1338730463" name="entry.1338730463" placeholder=" " required="" />
+						<label class="input__label input__label--ichiro" for="entry.1338730463">
 							<span class="input__label-content input__label-content--ichiro">Your Email</span>
 						</label>
 					</span>
                     <span class="input input--ichiro">
-						<input class="input__field input__field--ichiro" type="text" id="input-27" name="MobileNumber" placeholder=" " required="" />
-						<label class="input__label input__label--ichiro" for="input-27">
-							<span class="input__label-content input__label-content--ichiro">Your Mobile Number</span>
+						<input class="input__field input__field--ichiro" type="text" id="entry.1348623554" name="entry.1348623554" placeholder=" " required="" />
+						<label class="input__label input__label--ichiro" for="entry.1348623554">
+							<span class="input__label-content input__label-content--ichiro">Your Contact Number</span>
 						</label>
 					</span>
-					<textarea name="Message" placeholder="Tell us what you need. we will get back to you with a quote soon." required=""></textarea>
+					<textarea id="entry.1048124481" name="entry.1048124481" placeholder="Tell us what you need. we will get back to you with a quote soon." required=""></textarea>
 					<input type="submit" value="Submit">
 				</form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -342,7 +343,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 			
 		});
-</script>	
+</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(1000);
+  $('#gform').prepend('Thanks for your interest in B2BEazy. Your Query has been sent to our sales department. We will get back to you soon...');
+  });
+</script>
 <!-- //main slider-banner --> 
 
 </body>
