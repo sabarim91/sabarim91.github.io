@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
 function closeSelf(){
     // do something
-window.parent.jQuery.colorbox.close();
+setTimeout(function(){ window.parent.jQuery.colorbox.close(); }, 2000);
 }
 </script>
 <!-- start-smoth-scrolling -->
@@ -53,29 +53,41 @@ window.parent.jQuery.colorbox.close();
 			<div class="col-md-6 w3_agileits_contact_grid_right">
 				<h2 class="w3_agile_header">Your contact<span> details</span></h2>
 
-				<form action="#" method="post">
-					<span class="input input--ichiro">
-						<input class="input__field input__field--ichiro" type="text" id="input-25" name="Name" placeholder=" " required="" />
-						<label class="input__label input__label--ichiro" for="input-25">
-							<span class="input__label-content input__label-content--ichiro">Your Name</span>
-						</label>
-					</span>
-					<span class="input input--ichiro">
-						<input class="input__field input__field--ichiro" type="email" id="input-26" name="Email" placeholder=" " required="" />
-						<label class="input__label input__label--ichiro" for="input-26">
-							<span class="input__label-content input__label-content--ichiro">Your Email</span>
-						</label>
-					</span>
-                    <span class="input input--ichiro">
-						<input class="input__field input__field--ichiro" type="text" id="input-27" name="Message" placeholder=" " required="" />
-						<label class="input__label input__label--ichiro" for="input-27">
-							<span class="input__label-content input__label-content--ichiro">Your Mobile Number</span>
-						</label>
-					</span>
-					<input type="submit" value="Submit" onclick="setTimeout(function(){ closeSelf(); }, 1000);">
-				</form>
+				<form name="gform" id="gform" class="pure-form pure-form-stacked" method="post" action="https://script.google.com/macros/s/AKfycbzt6w4E513dH21zsPeebFes_u-Ut7N1aJLt_1gDvH-WCcDu1GrK/exec" 
+                              target="hidden_iframe" onsubmit="submitted=true;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name: </label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address:</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required="required" /></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="number">
+                                    Contact Number:</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span>
+                                    </span>
+                                    <input type="text" class="form-control" id="number" name="number" placeholder="Enter phone number" required="required" /></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                <i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
+                        </div>
+                    </div>
+                    </form>
 			</div>
 			<div class="clearfix"> </div>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 		</div>
 <!-- contact -->
 
@@ -126,5 +138,13 @@ window.parent.jQuery.colorbox.close();
 </script>	
 <!-- //main slider-banner --> 
 
+<script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+        $('#gform *').fadeOut(1000);
+        $('#gform').prepend('Thanks for submitting your details. You can now view our best wholesale prices.');
+        closeSelf();
+    });    
+</script>
+    
 </body>
 </html>
